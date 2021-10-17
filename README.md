@@ -22,7 +22,7 @@ This data table was then processed into a line chart for a visual mapping of the
 The second analysis was conducted to determine the Outcomes Based on Goals trend that compared the goal value of each project with the success of each project at the end of their fundraising period. Using the "COUNTIFS" function the number of successful, failed and canceled projects could be broken down into their own fields by the dollar value of each goal in ranges of $5,000 from a goal of less than $1,000 to a goal of more than $50,000. The formula
 
 ```
-=COUNTIFS(Kickstarter!$F:$F,"successful",Kickstarter!$D:$D, "<1000",Kickstarter!$R:$R,"plays")
+=COUNTIFS(Kickstarter!$F:$F,"successful",Kickstarter!$D:$D,"<1000",Kickstarter!$R:$R,"plays")
 ```
 
 was used to display the specific number of play projects that were both successful and had a goal that was less than $1,000. This formula type was then applied to each cell to populate the fields by adjusting the goal range amounts and then by adjusting the outcome of each play project as needed. Following this, the number of projects for each goal range were added up using the "SUM" function in the formula
